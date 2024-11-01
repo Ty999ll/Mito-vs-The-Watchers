@@ -1,0 +1,73 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>8700ad96-f775-40e6-9a08-df9e5f4b449f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>minigame.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>minigame</Name>
+    <RootNamespace>minigame</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="minigame.py" />
+    <Compile Include="scripts\entities.py" />
+    <Compile Include="scripts\utils.py" />
+    <Compile Include="scripts\tilemap.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="player.png" />
+    <Content Include="mito background.png" />
+    <Content Include="player\idle\00.png" />
+    <Content Include="player\idle\01.png" />
+    <Content Include="player\idle\02.png" />
+    <Content Include="sound\background music.wav" />
+    <Content Include="tiles\grass\0.png" />
+    <Content Include="tiles\grass\1.png" />
+    <Content Include="tiles\grass\2.png" />
+    <Content Include="tiles\grass\3.png" />
+    <Content Include="tiles\grass\4.png" />
+    <Content Include="tiles\grass\5.png" />
+    <Content Include="tiles\grass\6.png" />
+    <Content Include="tiles\grass\7.png" />
+    <Content Include="tiles\grass\8.png" />
+    <Content Include="tiles\stone\0.png" />
+    <Content Include="tiles\stone\1.png" />
+    <Content Include="tiles\stone\2.png" />
+    <Content Include="tiles\stone\3.png" />
+    <Content Include="tiles\stone\4.png" />
+    <Content Include="tiles\stone\5.png" />
+    <Content Include="tiles\stone\6.png" />
+    <Content Include="tiles\stone\7.png" />
+    <Content Include="tiles\stone\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="player\" />
+    <Folder Include="player\idle\" />
+    <Folder Include="sound\" />
+    <Folder Include="tiles\" />
+    <Folder Include="scripts\" />
+    <Folder Include="tiles\grass\" />
+    <Folder Include="tiles\stone\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
